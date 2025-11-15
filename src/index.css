@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #ff4081;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+
+  /* GLASS EFFECT */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
