@@ -46,7 +46,7 @@ export default function App() {
 
         {/* PRIVATE */}
         <Route
-          path="home"
+          path="/home"
           element={
             <ProtectedRoute>
               <AdminHome />
