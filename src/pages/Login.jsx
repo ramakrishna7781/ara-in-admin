@@ -24,7 +24,7 @@ export default function Login() {
       localStorage.setItem("admin_token", token);
       localStorage.setItem("admin_token_expiry", Date.now() + 900000);
 
-      navigate("/home");
+      navigate("home");
     } catch (err) {
       setErrorMsg("Invalid email or password");
     }
