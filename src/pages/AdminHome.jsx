@@ -116,7 +116,10 @@ export default function AdminHome() {
       <button
         onClick={() => {
           localStorage.removeItem("admin_token");
-          window.location.href = "/#/login";
+          // window.location.href = "/#/login";
+          window.location.href = `${window.location.origin}/#/login`;
+          // window.location.hash = "#/login";
+          // window.location.replace("#/login");
         }}
         style={{
           position: "absolute",
