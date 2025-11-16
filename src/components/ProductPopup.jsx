@@ -73,14 +73,16 @@ export default function ProductPopup({
         style={{
           width: "90%",
           maxWidth: 420,
+          height: "70vh",          // <── FIX: popup is now smaller
+          overflowY: "auto",       // <── FIX: all contents scroll
           background: "#ff69b4",
           padding: 25,
           borderRadius: 20,
           color: "white",
-          display: "flex",
-          flexDirection: "column",
+          boxSizing: "border-box",
         }}
       >
+
         <h2 style={{ textAlign: "center", marginBottom: 15 }}>
           {mode === "add" ? "Add Product" : "Edit Product"}
         </h2>

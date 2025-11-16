@@ -107,9 +107,10 @@ export default function AdminHome() {
       style={{
         padding: 20,
         background: "#ff4081",
-        minHeight: "100vh",
+        height: "100vh",
         color: "white",
         position: "relative",
+        overflowY: "auto",
       }}
     >
       {/* LOGOUT BUTTON */}
